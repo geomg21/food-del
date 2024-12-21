@@ -1,0 +1,109 @@
+.add {
+    width: 70%;
+    margin: 50px auto; /* Center align the section */
+    color: #4A4A4A; /* Slightly darker gray for better readability */
+    font-size: 16px;
+    background-color: #F9F9F9; /* Light background for contrast */
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.add h2 {
+    color: #333333; /* Darker header color */
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Consistent gap between form elements */
+}
+
+.add-img-upload img {
+    width: 120px;
+    border-radius: 8px; /* Rounded edges for a smoother look */
+    border: 1px solid #E0E0E0; /* Subtle border for better image focus */
+}
+
+.add-product-name,
+.add-product-description {
+    width: max(50%, 300px); /* Slightly wider inputs for better usability */
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    width: 100%; /* Ensure inputs take up full width of their container */
+    padding: 12px 15px; /* Consistent padding */
+    font-size: 14px;
+    border: 1px solid #D9D9D9; /* Neutral border color */
+    border-radius: 4px; /* Rounded input edges */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+    border-color: #FF4C24; /* Highlight input border on focus */
+    box-shadow: 0 0 5px rgba(255, 76, 36, 0.5); /* Subtle glow effect */
+}
+
+.add-category-price {
+    display: flex;
+    flex-wrap: wrap; /* Wrap for smaller screens */
+    gap: 20px; /* Reduced gap for tighter spacing */
+    align-items: center; /* Align inputs vertically */
+}
+
+.add-category-price select,
+.add-category-price input {
+    max-width: 150px; /* Slightly wider for usability */
+    padding: 12px 10px;
+    font-size: 14px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-category-price select:focus,
+.add-category-price input:focus {
+    border-color: #FF4C24;
+    box-shadow: 0 0 5px rgba(255, 76, 36, 0.5);
+}
+
+.add-btn {
+    max-width: 150px; /* Slightly larger button */
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FF4C24;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+    background-color: #E0431E; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+@media (max-width: 768px) {
+    .add {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 15px 20px; /* Reduced padding */
+    }
+
+    .add-product-name,
+    .add-product-description {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .add-category-price {
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 15px; /* Adjust gap */
+    }
+}

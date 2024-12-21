@@ -1,0 +1,135 @@
+/* Footer Styling */
+.footer {
+    color: #D9D9D9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+/* Align the content inside each section */
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+/* Footer Content Left (Logo & Description) */
+.footer-content-left img {
+    width: 150px; /* Adjust the logo size */
+    height: auto;
+}
+
+.footer-caption {
+    font-size: 1.1rem;
+    color: #D9D9D9;
+    font-weight: 500;
+    margin-top: 15px;
+    max-width: 450px; /* Limit the width for better readability */
+    text-align: center;
+}
+
+.footer-social-icons img {
+    width: 40px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Links in footer sections */
+.footer-content-left ul li,
+.footer-content-center ul li,
+.footer-content-right ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-content-left h2,
+.footer-content-center h2,
+.footer-content-right h2 {
+    color: white;
+    font-weight: 600;
+}
+
+/* Footer Content Center (Navigation Links) */
+.footer-content-center ul {
+    padding: 0;
+}
+
+.footer-content-center ul li:hover {
+    color: #F4A261; /* Highlight on hover */
+}
+
+/* Footer Content Right (Contact Info) */
+.footer-content-right ul {
+    padding: 0;
+}
+
+.footer-content-right ul li {
+    font-size: 0.9rem;
+}
+
+/* Recaptcha Section */
+.footer-recaptcha {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Horizontal Divider */
+.footer hr {
+    width: 100%;
+    height: 2px;
+    background-color: #555;
+    margin: 20px 0;
+}
+
+/* Footer Copyright Text */
+.footer-copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #D9D9D9;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+
+    .footer-content-center ul,
+    .footer-content-right ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+}

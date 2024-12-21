@@ -1,0 +1,77 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: 120% auto; /* Adjusts the width of the image */
+    background-position: center; /* Keeps the image centered */
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: #f8f7f7; /* Soft off-white */
+    font-size: max(5.5vw, 22px);
+    text-transform: uppercase; /* Adds a bold, impactful feel */
+    letter-spacing: 1.5px; /* Slightly increases letter spacing for a cleaner look */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.5); /* Adds a subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Adding more contrast to the paragraph */
+.header-contents p {
+    color: rgba(9, 8, 8, 0.8); /* Slightly less opacity for a softer look */
+    font-size: 1vw;
+    line-height: 1.6;
+}
+
+/* Button Styling - Add hover effect for interactivity */
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.header-contents button:hover {
+    background-color: #FFD700; /* Gold color on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight increase in size for interactive feel */
+}
+
+/* Media query adjustments */
+@media (max-width: 1050px) {
+    .header {
+        height: 38vw;
+    }
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 55%;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}

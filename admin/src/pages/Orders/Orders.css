@@ -1,0 +1,71 @@
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr; /* Defined columns for clear structure */
+    align-items: start;
+    gap: 20px; /* Balanced spacing between items */
+    border: 1px solid #D9534F; /* A more subtle tomato-like color */
+    padding: 20px;
+    margin: 20px 0; /* Slightly reduced margin for a compact layout */
+    font-size: 14px;
+    color: #4A4A4A; /* Neutral text color for readability */
+    background-color: #FFF5F4; /* Light background for a clean look */
+    border-radius: 8px; /* Rounded corners for a modern aesthetic */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual hierarchy */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth interaction effect */
+}
+
+.order-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.order-item-food,
+.order-item-name {
+    font-weight: 600;
+    color: #333333; /* Slightly darker color for emphasis */
+}
+
+.order-item-name {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.order-item-address {
+    margin-bottom: 10px;
+    font-size: 13px; /* Slightly smaller font for address details */
+    color: #6A6A6A; /* Lighter text color for secondary details */
+}
+
+.order-item select {
+    background-color: #FFEDEA; /* Softer background for better contrast */
+    border: 1px solid #D9534F;
+    width: max(10vw, 120px);
+    padding: 8px; /* Balanced padding for better usability */
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px; /* Rounded edges for inputs */
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease; /* Smooth interaction effects */
+}
+
+.order-item select:focus {
+    border-color: #C9302C; /* Highlighted border on focus */
+    background-color: #FFF0F0; /* Lighter background on focus */
+}
+
+@media (max-width: 1000px) {
+    .order-item {
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr; /* Simplified layout for smaller screens */
+        padding: 15px 10px;
+    }
+
+    .order-item select {
+        padding: 6px; /* Adjusted padding for smaller screens */
+        font-size: 12px;
+    }
+
+    .order-item img {
+        width: 40px; /* Reduced image size for smaller screens */
+    }
+}
